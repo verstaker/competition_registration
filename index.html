@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+		<title>Регистрация нового соревнования</title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+		<link rel="icon" type="image/png" href="img_general/favicon.png">
+		<link rel="icon" type="image/ico" href="img_general/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</head>
+	<body>
+		<div class="maincontainer">
+            <div class="container">
+                <header>
+                    <div class="header">
+                        <div class="header__left">
+                            <a href="/" class="logo logo_header">
+                                <img src="img_general/logo.png" alt="Логотип" title="Логотип" />
+                            </a>
+                            <div class="language">
+                                <a href="#" class="language__block language__block_active">ru</a>
+                                <a href="#" class="language__block">en</a>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <div class="personal-area personal-area_active">
+                                <div class="personal-area__top">
+                                    <a href="#" class="personal-area__icon">
+                                        <img src="img_general/personal_area.png">
+                                    </a>
+                                    <div class="personal-area__name">
+                                        <a href="#" class="personal-area__title">Tourist</a>
+                                        <div class="personal-area__exit">Выход</div>
+                                    </div>
+                                </div>
+                                <div class="personal-area__check personal-area__check_confirm"><span>✔</span> Подтверждённый профиль</div>
+                                <div class="personal-area__check"><span>✘</span> Неподтверждённый профиль</div>
+                            </div>
+                            <div class="personal-area">
+                                <div class="personal-area__inner">
+                                    <div class="personal-area__button personal-area_enter">Вход</div>
+                                    <div class="personal-area__button personal-area_register">Регистрация</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <div class="menu__close">&#10006;</div>
+                            <div class="menu__close-all"></div>
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Соревнования</a>
+                                <li><a href="#">Тренировка</a>
+                                <li><a href="#">Edu</a>
+                                <li><a href="#">Рейтинг</a>
+                                <li><a href="#">Архив задач</a>
+                                <li><a href="#">Наши партнеры</a>
+                                <li><a href="#">Контакты</a>
+                                <li><a href="#">О спортивном программировании</a>           
+                            </ul>
+                        </nav>
+                        <div class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="main-content main-content_new-task">
+                    <div class="main-content__inner">
+                        <div class="content">
+                            <div class="content__tab">
+                                <h1>Регистрация нового соревнования</h1>
+                                <h2>Шаг №1 - Добавьте информацию о мероприятии</h2>
+                                <form action="" method="post" name="new-task">
+                                    <div class="content__form-row content__form-row_inline">
+                                        <input type="text" name="title-task" placeholder="Введите название контеста">
+                                        <select name="level-task">
+                                             <option disabled selected="selected">Выберите уровень усложности контеста</option>
+                                            <option value="Задача 1">Уровень 1</option>
+                                            <option value="Уровень 2">Уровень 2</option>
+                                            <option value="Уровень 3">Уровень 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="content__form-row content__form-row_inline content__form-row_inline-bottom">
+                                        <select name="rules-task">
+                                            <option disabled selected="selected">Правила проверки</option>
+                                            <option value="Правило 1">Правило 1</option>
+                                            <option value="Правило 2">Правило 2</option>
+                                            <option value="Правило 3">Правило 3</option>
+                                            <option value="Правило 4">Правило 4</option>
+                                        </select>
+                                        <select name="contest-task">
+                                            <option disabled selected="selected">Виртуальный контест</option>
+                                            <option value="Виртуальный контест 1">Виртуальный контест</option>
+                                            <option value="Виртуальный контест 2">Виртуальный контест</option>
+                                            <option value="Виртуальный контест 3">Виртуальный контест</option>
+                                            <option value="Виртуальный контест 4">Виртуальный контест</option>
+                                        </select>
+                                    </div>
+                                    <div class="content__form-row">
+                                        <p>Условия участия</p>
+                                        <textarea placeholder="Опишите подробно условия участия в соревновании. Данный текст будет отображен в описании соревнования"></textarea>
+                                    </div>
+                                    <div class="content__form-row content__form-row_inline">
+                                        <input type="datetime-local" name="datetime-task" placeholder="Начало контеста (YYYY-MM-DD HH:MM:SS)">
+                                        <input type="number" name="datetime-min" placeholder="Время заморозки монитора (мин) - от начала контеста">
+                                    </div>
+                                    <div class="content__form-row content__form-row_inline">
+                                        <input type="number" name="longtime-task" placeholder="Длительность контеста (мин)">
+                                        <input type="number" name="datetime-min" placeholder="Время разморозки монитора (мин) - от начала контеста">
+                                    </div>
+                                    <div class="content__form-row">
+                                        <select name="langugage-task" multiple="multiple" size="4">
+                                            <option disabled selected="selected">Выберите доступные языки программирования</option>
+                                            <option value="NU GCC C11 5.1.0">NU GCC C11 5.1.0</option>
+                                            <option value="Clang++20 Diagnostics">Clang++20 Diagnostics</option>
+                                            <option value="Clang++17 Diagnostics">Clang++17 Diagnostics</option>
+                                            <option value="GNU G++14 6.4.0">GNU G++14 6.4.0</option>
+                                            <option value="GNU G++17 7.3.0">GNU G++17 7.3.0</option>
+                                            <option value="GNU G++20 11.2.0 (64 bit, winlibs)">GNU G++20 11.2.0 (64 bit, winlibs)</option>
+                                            <option value="Microsoft Visual C++ 2017">Microsoft Visual C++ 2017</option>
+                                            <option value="GNU G++17 9.2.0 (64 bit, msys 2)">GNU G++17 9.2.0 (64 bit, msys 2)</option>
+                                            <option value="C# 8, .NET Core 3.1">C# 8, .NET Core 3.1</option>
+                                            <option value="C# 10, .NET SDK 6.0">C# 10, .NET SDK 6.0</option>
+                                            <option value="C# Mono 6.8">C# Mono 6.8</option>
+                                            <option value="D DMD32 v2.101.2">D DMD32 v2.101.2</option>
+                                            <option value="Go 1.19.5">Go 1.19.5</option>
+                                            <option value="Haskell GHC 8.10.1">Haskell GHC 8.10.1</option>
+                                            <option value="Java 11.0.6">Java 11.0.6</option>
+                                            <option value="Java 17 64bit">Java 17 64bit</option>
+                                            <option value="Java 1.8.0_241">Java 1.8.0_241</option>
+                                            <option value="Kotlin 1.6.10">Kotlin 1.6.10</option>
+                                            <option value="Kotlin 1.7.20">Kotlin 1.7.20</option>
+                                            <option value="OCaml 4.02.1">OCaml 4.02.1</option>
+                                            <option value="Delphi 7">Delphi 7</option>
+                                            <option value="Free Pascal 3.0.2">Free Pascal 3.0.2</option>
+                                            <option value="PascalABC.NET 3.8.3">PascalABC.NET 3.8.3</option>
+                                            <option value="Perl 5.20.1">Perl 5.20.1</option>
+                                            <option value="PHP 8.1.7">PHP 8.1.7</option>
+                                            <option value="Python 2.7.18">Python 2.7.18</option>
+                                            <option value="Python 3.8.10">Python 3.8.10</option>
+                                            <option value="PyPy 2.7.13 (7.3.0)">PyPy 2.7.13 (7.3.0)</option>
+                                            <option value="PyPy 3.6.9 (7.3.0)">PyPy 3.6.9 (7.3.0)</option>
+                                            <option value="PyPy 3.9.10 (7.3.9, 64bit)">PyPy 3.9.10 (7.3.9, 64bit)</option>
+                                            <option value="Ruby 3.0.0">Ruby 3.0.0</option>
+                                            <option value="Ruby 3.0.0">Rust 1.66.0 (2021)</option>
+                                            <option value="Scala 2.12.8">Scala 2.12.8</option>
+                                            <option value="JavaScript V8 4.8.0">JavaScript V8 4.8.0</option>
+                                            <option value="Node.js 12.16.3">Node.js 12.16.3</option>
+                                            <option value="ActiveTcl 8.5">ActiveTcl 8.5</option>
+                                            <option value="Pike 7.8">Pike 7.8</option>
+                                            <option value="OpenCobol 1.0">OpenCobol 1.0</option>
+                                            <option value="Factor">Factor</option>
+                                            <option value="Ada GNAT 4">Ada GNAT 4</option>
+                                            <option value="Picat 0.9">Picat 0.9</option>
+                                            <option value="GNU C++11 5 ZIP">GNU C++11 5 ZIP</option>
+                                            <option value="Java 8 ZIP">Java 8 ZIP</option>
+                                            <option value="J">J</option>
+                                            <option value="Java 8 ZIP">Dart</option>
+                                            <option value="Microsoft Q#">Microsoft Q#</option>
+                                        </select>
+                                    </div>
+                                    <div class="content__form-row content__form-row_inline">
+                                        <label class="input-file">
+                                            <input type="file" name="file_task[]" multiple class="file_task">
+                                            <span class="button button_form-file">Загрузите дополнительные<br>файлы для контеста</span>
+                                        </label>
+                                        <div class="input-file-list">Ничего пока не загружено</div>
+                                    </div>
+                                    <div class="content__form-row content__form-row_block">
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="t1">
+                                            <label for="t1">
+                                                Запретить дорешивание*
+                                                <div class="content__form-row_question">
+                                                    <svg viewBox="0 0 800 800">
+                                                    <path d="M33.3,400C33.3,197.5,197.5,33.3,400,33.3c202.5,0,366.7,164.2,366.7,366.7c0,202.5-164.2,366.7-366.7,366.7 C197.5,766.7,33.3,602.5,33.3,400z M343.4,446.5c-2.4,10.7,6.7,20.2,18.2,20.2h73.1c8.6,0,15.8-5.5,18.9-13.1 c3-7.6,13.5-21.3,21.6-28.5c7.6-8,15.6-15.6,23.4-23c30.9-29.3,59.9-56.9,59.9-105c0-83.6-72.4-130.3-149.4-130.3 c-58.9,0-140.2,26.9-156.2,116.8c-3.2,18.1,12.1,33.2,30.5,33.2h47.1c17.6,0,30.6-14.1,36.7-30.6c5.8-15.9,17.5-27.6,42-27.6 c44.5,0,44.5,49,18.8,81c-9.7,12.1-21.1,22.8-32.3,33.4C372.7,394.3,350.3,415.3,343.4,446.5z M466.7,566.7 c0,36.8-29.8,66.7-66.7,66.7c-36.8,0-66.7-29.8-66.7-66.7c0-36.8,29.8-66.7,66.7-66.7C436.8,500,466.7,529.8,466.7,566.7z"/>
+                                                    </svg>
+                                                    <div class="content__form-row_popup">Примечание Примечание Примечание Примечание Примечание Примечание</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="t2">
+                                            <label for="t2">
+                                                Закрытый контест*
+                                                <div class="content__form-row_question">
+                                                    <svg viewBox="0 0 800 800">
+                                                    <path d="M33.3,400C33.3,197.5,197.5,33.3,400,33.3c202.5,0,366.7,164.2,366.7,366.7c0,202.5-164.2,366.7-366.7,366.7 C197.5,766.7,33.3,602.5,33.3,400z M343.4,446.5c-2.4,10.7,6.7,20.2,18.2,20.2h73.1c8.6,0,15.8-5.5,18.9-13.1 c3-7.6,13.5-21.3,21.6-28.5c7.6-8,15.6-15.6,23.4-23c30.9-29.3,59.9-56.9,59.9-105c0-83.6-72.4-130.3-149.4-130.3 c-58.9,0-140.2,26.9-156.2,116.8c-3.2,18.1,12.1,33.2,30.5,33.2h47.1c17.6,0,30.6-14.1,36.7-30.6c5.8-15.9,17.5-27.6,42-27.6 c44.5,0,44.5,49,18.8,81c-9.7,12.1-21.1,22.8-32.3,33.4C372.7,394.3,350.3,415.3,343.4,446.5z M466.7,566.7 c0,36.8-29.8,66.7-66.7,66.7c-36.8,0-66.7-29.8-66.7-66.7c0-36.8,29.8-66.7,66.7-66.7C436.8,500,466.7,529.8,466.7,566.7z"/>
+                                                    </svg>
+                                                    <div class="content__form-row_popup">Примечание всякого рода, чтобы было понятно</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="t3">
+                                            <label for="t3">
+                                                Участник видит только себя
+                                                <div class="content__form-row_question">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="t4">
+                                            <label for="t4">
+                                                Важный контест*
+                                                <div class="content__form-row_question">
+                                                    <svg viewBox="0 0 800 800">
+                                                    <path d="M33.3,400C33.3,197.5,197.5,33.3,400,33.3c202.5,0,366.7,164.2,366.7,366.7c0,202.5-164.2,366.7-366.7,366.7 C197.5,766.7,33.3,602.5,33.3,400z M343.4,446.5c-2.4,10.7,6.7,20.2,18.2,20.2h73.1c8.6,0,15.8-5.5,18.9-13.1 c3-7.6,13.5-21.3,21.6-28.5c7.6-8,15.6-15.6,23.4-23c30.9-29.3,59.9-56.9,59.9-105c0-83.6-72.4-130.3-149.4-130.3 c-58.9,0-140.2,26.9-156.2,116.8c-3.2,18.1,12.1,33.2,30.5,33.2h47.1c17.6,0,30.6-14.1,36.7-30.6c5.8-15.9,17.5-27.6,42-27.6 c44.5,0,44.5,49,18.8,81c-9.7,12.1-21.1,22.8-32.3,33.4C372.7,394.3,350.3,415.3,343.4,446.5z M466.7,566.7 c0,36.8-29.8,66.7-66.7,66.7c-36.8,0-66.7-29.8-66.7-66.7c0-36.8,29.8-66.7,66.7-66.7C436.8,500,466.7,529.8,466.7,566.7z"/>
+                                                    </svg>
+                                                    <div class="content__form-row_popup">Примечание всякого рода, чтобы было понятно</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="t5">
+                                            <label for="t5">
+                                                Рейтинговый контест*
+                                                <div class="content__form-row_question">
+                                                    <svg viewBox="0 0 800 800">
+                                                    <path d="M33.3,400C33.3,197.5,197.5,33.3,400,33.3c202.5,0,366.7,164.2,366.7,366.7c0,202.5-164.2,366.7-366.7,366.7 C197.5,766.7,33.3,602.5,33.3,400z M343.4,446.5c-2.4,10.7,6.7,20.2,18.2,20.2h73.1c8.6,0,15.8-5.5,18.9-13.1 c3-7.6,13.5-21.3,21.6-28.5c7.6-8,15.6-15.6,23.4-23c30.9-29.3,59.9-56.9,59.9-105c0-83.6-72.4-130.3-149.4-130.3 c-58.9,0-140.2,26.9-156.2,116.8c-3.2,18.1,12.1,33.2,30.5,33.2h47.1c17.6,0,30.6-14.1,36.7-30.6c5.8-15.9,17.5-27.6,42-27.6 c44.5,0,44.5,49,18.8,81c-9.7,12.1-21.1,22.8-32.3,33.4C372.7,394.3,350.3,415.3,343.4,446.5z M466.7,566.7 c0,36.8-29.8,66.7-66.7,66.7c-36.8,0-66.7-29.8-66.7-66.7c0-36.8,29.8-66.7,66.7-66.7C436.8,500,466.7,529.8,466.7,566.7z"/>
+                                                    </svg>
+                                                    <div class="content__form-row_popup">Примечание всякого рода, чтобы было понятно</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="content__form-row content__form-row_block">
+                                        <div class="content__form-row-big">
+                                            <h2>Выберите обязательные поля для заполнения при регистрации</h2>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p1">
+                                            <label for="p1">
+                                               ФИО
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p2">
+                                            <label for="p2">
+                                                Телефон
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p3">
+                                            <label for="p3">
+                                                E-mail
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p4">
+                                            <label for="p4">
+                                                Дата рождения
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p5">
+                                            <label for="p5">
+                                                Статус
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p6">
+                                            <label for="p6">
+                                               Квалификации / спортивный разряд
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p7">
+                                            <label for="p7">
+                                              Учебное учреждение/Организация
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p8">
+                                            <label for="p8">
+                                                Размер одежды
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="p9">
+                                            <label for="p9">
+                                                Страна + город
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="content__form-row content__form-row_block">
+                                        <div class="content__form-row-big">
+                                            <h2>Для кого это сореванование</h2>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="s1">
+                                            <label for="s1">
+                                               Россия
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="s2">
+                                            <label for="s2">
+                                               Школьники
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="s3">
+                                            <label for="s3">
+                                               Мир
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="s4">
+                                            <label for="s4">
+                                               Студенты
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small">
+                                            <input type="checkbox" id="s5">
+                                            <label for="s5">
+                                               Профи
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="content__form-row content__form-row_block">
+                                        <div class="content__form-row-big">
+                                            <h2>Баннер на главной</h2>
+                                        </div>
+                                        <div class="content__form-row-small content__form-row-big">
+                                            <input type="checkbox" id="b3">
+                                            <label for="b3">
+                                               Отображать на главной
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row content__form-row_banner content_image">
+                                            <label class="input-file">
+                                                <input type="file" name="banner-task" accept="image/*" class="file_image" id="banner">	<span class="button button_form-file">Загрузить баннер на главную</span>
+                                            </label>
+                                            <div class="input-file-list input-file-list-image" id="t1">Ничего пока не загружено</div> 
+                                        </div>
+                                    </div>
+                                    <div class="content__form-row content__form-row_block content__form-row_block-achive">
+                                        <div class="content__form-row-big">
+                                            <h2>Загрузите ачивку</h2>
+                                        </div>
+                                        <div class="content__form-row-big">
+                                            <input type="text" name="achievement-title" placeholder="Заголовок">
+                                            <input type="text" name="achievement-desc" placeholder="Описание">
+                                        </div>
+                                        <div class="content__form-row-big content_image">
+                                            <label class="input-file">
+                                                <input type="file" name="achievement-task" accept="image/*" class="file_image">	<span class="button button_form-file">Загрузить файл</span>
+                                            </label>
+                                            <div class="input-file-list input-file-list-image">Ничего пока не загружено</div> 
+                                        </div>
+                                        <div class="content__form-row-small content__form-row-big">
+                                            <input type="checkbox" id="a1">
+                                            <label for="a1">
+                                               Участие в соревновании
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small content__form-row-big">
+                                            <input type="checkbox" id="a2" class="achiv_check">
+                                            <label for="a2">
+                                               Решение  <input type="text" class="achiv_input" disabled>  задач в соревновании, поле можно клонировать
+                                            </label>
+                                        </div>
+                                        <div class="content__form-row-small content__form-row-big">
+                                            <input type="checkbox" id="a3" class="achiv_check">
+                                            <label for="a3">
+                                               Занятие с  <input type="text" class="achiv_input" disabled>  по  <input type="text" class="achiv_input" disabled>  место в соревновании, поле можно клонировать
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="content__form-row-clone"></div>
+                                    <div class="content__form-row content__form-row_block">
+                                        <div class="content__form-row-big">
+                                            <h2 class="text-center">Загрузите еще ачивку</h2>
+                                            <div class="button content__form-download">добавить ачивку</div>
+                                        </div>
+                                    </div>
+                                    <div class="content__form-row content__form-row_block">
+                                        <div class="content__form-row-big">
+                                            <h2 class="text-center">Загрузите спонсоров мероприятия</h2>
+                                        </div>
+                                        <div class="content__form-row-big content__form-row_inline">
+                                            <label class="input-file">
+                                                <span class="input-file__span">Спонсор №1</span>
+                                                <input type="file" name="sponsor1" accept="image/*" class="file_image">	<span class="button button_form-file">Загрузить</span>
+                                            </label>
+                                            <div class="input-file-list input-file-list-image">Ничего пока не загружено</div>
+                                        </div>
+                                        <div class="content__form-row-big content__form-row_inline">
+                                            <label class="input-file">
+                                                <span class="input-file__span">Спонсор №2</span>
+                                                <input type="file" name="sponsor2" accept="image/*" class="file_image">	<span class="button button_form-file">Загрузить</span>
+                                            </label>
+                                            <div class="input-file-list input-file-list-image">Ничего пока не загружено</div>
+                                        </div>
+                                        <div class="content__form-row-big content__form-row_inline">
+                                            <label class="input-file">
+                                                <span class="input-file__span">Спонсор №3</span>
+                                                <input type="file" name="sponsor3" accept="image/*" class="file_image">	<span class="button button_form-file">Загрузить</span>
+                                            </label>
+                                            <div class="input-file-list input-file-list-image">Ничего пока не загружено</div>
+                                        </div>
+                                        <div class="content__form-row-big content__form-row_inline">
+                                            <label class="input-file">
+                                                <span class="input-file__span">Спонсор №4</span>
+                                                <input type="file" name="sponsor4" accept="image/*" class="file_image">	<span class="button button_form-file">Загрузить</span>
+                                            </label>
+                                            <div class="input-file-list input-file-list-image">Ничего пока не загружено</div>
+                                        </div>
+                                        <div class="content__form-row-big content__form-row_inline">
+                                            <label class="input-file">
+                                                <span class="input-file__span">Спонсор №5</span>
+                                                <input type="file" name="sponsor5" accept="image/*" class="file_image">	<span class="button button_form-file">Загрузить</span>
+                                            </label>
+                                            <div class="input-file-list input-file-list-image">Ничего пока не загружено</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div> 
+                    <div class="main-content main-content_new-task main-content_new-task_grey">
+                        <div class="main-content__inner">
+                            <div class="content__tab">
+                                <h2>Шаг №2 - Загрузите задачи</h2>
+                                <div class="content__form-row content__form-row_block">
+                                    <div class="content__form-row-big">
+                                        <input type="text" placeholder="Введите уникальный идентификатор задачи">
+                                        <span class="content__form-add-loader">
+                                            <svg viewBox="0 0 800 800">
+                                                    <circle class="st0" cx="418.7" cy="93.6" r="93.6"/>
+                                                    <circle class="st0" cx="418.7" cy="743.9" r="56.1"/>
+                                                    <circle class="st0" cx="188.8" cy="188.8" r="84.2"/>
+                                                    <circle class="st0" cx="648.7" cy="648.6" r="46.8"/>
+                                                    <circle class="st0" cx="93.6" cy="418.7" r="74.8"/>
+                                                    <circle class="st0" cx="743.9" cy="418.7" r="37.4"/>
+                                                    <path class="st0" d="M142.5,602.4c-25.6,25.6-25.6,67,0,92.6c25.6,25.6,67,25.6,92.6,0c25.6-25.6,25.6-67,0-92.6 C209.6,576.7,168.1,576.5,142.5,602.4z"/>
+                                                    <circle class="st0" cx="648.6" cy="188.8" r="28.1"/>
+                                            </svg>
+                                        </span>
+                                        <span class="content__form-add-success">&#10004;</span>
+                                        <span class="content__form-add-error">&#10006;</span>
+                                        <div class="button content__form-add-task">проверить номер</div>
+                                        <div class="button content__form-add-else">добавить</div>
+                                    </div>
+                                </div>
+                                <div class="content__form-row content__form-row_block content__form-row_hidden">
+                                    <div class="content__form-row-big">
+                                        <h2>Или загрузите свои задачи</h2>
+                                        <div class="button content__form-add-new-task">Добавить задачу</div>
+                                    </div>
+                                </div>
+                                    <form action="" method="post" name="add-task" class="content__form-row content__form-row_block content__form-row_form">
+                                        <div class="content__form-row-close content__form-row-form-close" title="Удалить блок">✖</div>
+                                        <div class="content__form-row-big">
+                                            <h2>Новая задача</h2>
+                                        </div>
+                                        <div class="content__form-row-big">
+                                            <input type="text" name="add1" placeholder="Наименование задачи">
+                                        </div>
+                                        <div class="content__form-row-big">
+                                            <input name="add2" placeholder="Загрузите условие задачи">
+                                        </div>
+                                        <div class="content__form-row-big">
+                                            <input name="add3" type="text" placeholder="Введите количество тестов N">
+                                        </div>
+                                        <div class="content__form-row-big">
+                                            <input name="add4" type="text" placeholder="Загрузить N тестов">
+                                        </div>
+                                        <div class="content__form-row-big">
+                                            <input name="add5" type="text" placeholder="Указать лимиты на время выполнения задачи и память">
+                                        </div>
+                                        <div class="content__form-row-big">
+                                            <input name="add5" type="text" placeholder="Полное Авторское решение">
+                                        </div>
+                                        <div class="content__form-row-big">
+                                            <input type="submit" value="Загрузить задачу" class="button button_added">
+                                        </div>
+                                    </form>
+                                <div class="content__form-row content__form-row_block content__form-row_thx">
+                                    <div class="content__form-row-big">
+                                        <h2>Спасибо! Ваша задача загружена.</h2>
+                                        <div class="button content__form-add-new-task">Добавить еще одну задачу</div>
+                                    </div>
+                                </div>
+                                <div class="content__form-row content__form-row_block content__form-row_inline">
+                                    <div class="button button_draft">Сохранить черновик</div>
+                                    <input type="submit" class="button button_invers" form="new-task" value="Отправить на модерацию">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <footer>
+                <div class="footer">
+                    <div class="footer__top">
+                        <a href="#" class="footer__link">API</a>
+                        <a href="/" class="logo logo_footer">
+                            <img src="img_general/logo.png">
+                        </a>
+                    </div>
+                    <div class="footer__bottom">© 2011-2023 г. Сайт не является публичной офертой и носит информационный характер. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.</div>
+                </div>
+		    </footer>
+		</div>
+		<div class="b-popup b-popup_register">
+    		<div class="b-popup__close"></div>
+            <div class="b-popup__content">
+				<div class="b-popup__title">Регистрация</div>
+				<form method="post" name="register_user">
+                    <div class="b-popup__block">
+                        <p>Хэндл</p>
+                        <div class="b-popup__block-right">
+                            <input type="text" name="nickname" placeholder="nickname">
+                            <span>Выберите ваш ник в системе. Будьте внимательны, так как позже вы сможете его изменить только один раз в течение 7-ми дней после регистрации.</span>
+                        </div>
+                    </div>
+                    <div class="b-popup__block">
+                        <p>E-mail</p>
+                        <div class="b-popup__block-right">
+                            <input type="email" name="email" placeholder="121@123.ru">
+                        </div>
+                    </div>
+                    <div class="b-popup__block">
+                        <p>Пароль</p>
+                        <div class="b-popup__block-right">
+                            <input type="password" name="password" placeholder="******">
+                            <span>Пароль должен содержать не менее пяти символов.</span>
+                        </div>
+                    </div>
+                    <div class="b-popup__block">
+                        <p>Потверждение пароля</p>
+                        <div class="b-popup__block-right">
+                            <input type="password" name="password" placeholder="******">
+                        </div>
+                    </div>
+                    <div class="b-popup__block">
+                        <div class="b-popup__block-right">
+				            <input type="submit" name="submit" class="button" value="Зарегистрироваться">
+                            <span>Если вы уже регистрировались, но не получлили подтверждение по e-mail, то перейдите <a href="#">по ссылке</a>.</span>
+                        </div>
+                    </div>
+				</form>
+                <div class="b-popup__link-social">
+                    <a href="#">По Gmail</a>
+                    <a href="#">По ВКонтакте</a>
+                </div>
+                <div class="b-popup__close-up">&#10006;</div>
+            </div>
+        </div>
+        <div class="b-popup b-popup_enter">
+    		<div class="b-popup__close"></div>
+            <div class="b-popup__content">
+				<div class="b-popup__title">Войти в личный кабинет</div>
+				<form method="post" name="enter_user">
+                    <div class="b-popup__block">
+                        <p>Хэндл/e-mail</p>
+                        <div class="b-popup__block-right">
+                            <input type="text" name="nickname" placeholder="nickname">
+                        </div>
+                    </div>
+                    <div class="b-popup__block">
+                        <p>Пароль</p>
+                        <div class="b-popup__block-right">
+                            <input type="password" name="password" placeholder="******">
+                        </div>
+                    </div>
+                    <div class="b-popup__block">
+                        <div class="b-popup__block-right">
+				            <input type="submit" name="submit" class="button" value="Войти">
+                            <span class="b-popup__forget">Забыли пароль?</span>
+                        </div>
+                    </div>
+				</form>
+                <div class="b-popup__close-up">&#10006;</div>
+            </div>
+        </div>
+        <div class="b-popup b-popup_recovery">
+    		<div class="b-popup__close"></div>
+            <div class="b-popup__content">
+				<div class="b-popup__title">Восстановление пароля</div>
+				<form method="post" name="recovery_user">
+                    <div class="b-popup__block">
+                        <p>Хэндл/e-mail</p>
+                        <div class="b-popup__block-right">
+                            <input type="text" name="nickname" placeholder="nickname">
+                            <span>Введите хэндл или e-mail для восстановления пароля.</span>
+                        </div>
+                    </div>
+                    <div class="b-popup__block">
+                        <div class="b-popup__block-right">
+				            <input type="submit" name="submit" class="button" value="Восстановить">
+                        </div>
+                    </div>
+				</form>
+                <div class="b-popup__close-up">&#10006;</div>
+            </div>
+        </div>
+        <div class="b-popup messages">
+            <div class="b-popup__close"></div>
+            <div class="b-popup__content">
+				<div class="b-popup__title">Спасибо</div>
+				<p class="b-popup__text">Ваше решение отправено на проверку.</p>
+				<div class="b-popup__close-up">&#10006;</div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="general_script.js" type="text/javascript"></script>
+		<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>
